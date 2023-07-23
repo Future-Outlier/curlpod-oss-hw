@@ -1,5 +1,5 @@
 ## 可能需要的 prerequiste
-我的電腦遇到 Kubernetes 的 Role-Based Access Control (RBAC) 默认不允许 default ServiceAccount 列出 default 命名空间中的 Pods 的問題
+我的Ubuntu Environment 遇到 Kubernetes 的 Role-Based Access Control (RBAC) 默认不允许 default ServiceAccount 列出 default 命名空间中的 Pods 的問題
 ```
 {
   "kind": "Status",
@@ -19,6 +19,7 @@
 kubectl apply -f ./requirements/cluster-role.yaml
 kubectl apply -f ./requirements/role-binding.yaml
 ```
+這樣就解決問題了，有需要請自行使用
 
 ## 把 pod 啟動起來
 ```
