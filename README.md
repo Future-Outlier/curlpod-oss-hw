@@ -1,4 +1,3 @@
-操作說明
 ## 可能需要的 prerequiste
 我的電腦遇到 Kubernetes 的 Role-Based Access Control (RBAC) 默认不允许 default ServiceAccount 列出 default 命名空间中的 Pods 的問題
 ```
@@ -58,4 +57,4 @@ curl -k -H "Authorization: Bearer $(cat /var/run/secrets/kubernetes.io/serviceac
    - `/api/v1`: 指定了你要使用的 API 版本。
    - `/namespaces/default/pods`: 這是 API 的端點，表示你想要獲取 `default` 命名空間中的所有 Pods 資訊。
 
-總之，這條命令的目的是使用 Service Account 的 token 作為認證，請求 Kubernetes API 以獲取 `default` 命名空間中的所有 Pods 資訊。
+這條命令的目的是使用 Service Account 的 token 作為認證，請求 Kubernetes API 以獲取 `default` 命名空間中的所有 Pods 資訊。
