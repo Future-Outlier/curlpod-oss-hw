@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: curlpod
+  labels:
+    purpose: demonstrate-curl
+spec:
+  containers:
+  - name: curl-container
+    image: ubuntu:latest
+    command:
+    - sleep
+    - "3600"
